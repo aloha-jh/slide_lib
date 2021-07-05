@@ -1,3 +1,3 @@
 ### 페이지 
-*<http://github.etoos.com/pages/AE210422/slide_webpack/dist/>
+*<https://aloha-jh.github.io/slide_lib/dist/>
  
