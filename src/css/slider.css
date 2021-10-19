@@ -1,219 +1,296 @@
- 
 /*reset ---------------------------------------------------*/
-  @charset "utf-8";
+@charset "utf-8";
 /* *{ margin:0; padding:0;}
 li{ list-style-type:none;}
 img{ border:0 none;}
 
 header, footer, section, article, nav, aside{ display:block; } */
-button{
-	background: inherit ; border:none; box-shadow:none; 
-	border-radius:0; padding:0; overflow:visible; cursor:pointer
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /*layout ---------------------------------------------------*/
-.box{
-    width:100%;
-    height:100%;
-} 
+.box {
+    width: 100%;
+    height: 100%;
+}
 /* for width height flexible */
-  .visual,
-  .slider,
-  .img-wrap,
-  .img-wrap li{
-      /* height:450px;
+.visual,
+.slider,
+.img-wrap,
+.img-wrap li {
+    /* height:450px;
       width:1200px; */
-  }
-.slider{      
+}
+.slider {
     margin: 0 auto;
-    position:relative;
-    background-color:#eee;
+    position: relative;
+    background-color: #eee;
 }
-.slider .visual{
-    overflow:hidden; 
-    position:absolute; left:0px; 
+.slider .visual {
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
 }
-.slider .visual ul.img-wrap{ 
+.slider .visual ul.img-wrap {
     position: absolute;
 }
-ul.img-wrap{
+ul.img-wrap {
     /*transform: translate-x(-1200px);*/
 }
-.slider .visual ul.img-wrap li{
-    float:left;
-    font-size:400px; color:rgba(250,250,250,.9);
+.slider .visual ul.img-wrap li {
+    float: left;
+    font-size: 400px;
+    color: rgba(250, 250, 250, 0.9);
 }
-.slider ul.round-btns{
-    width:100%;  height:30px;
-    position:absolute;
-    bottom:0px; 
-    margin:0 auto;
-    text-align:center;
-    z-index:10;
+.slider ul.round-btns {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
 }
 
 /*style ---------------------------------------------------*/
- 
-ul.round-btns li{
-    display:inline-block; width:12px;height:12px;
-    border-radius:6px; background-color: rgba(0,0,0,0.4);
-     margin-right:3px;
+
+ul.round-btns li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-right: 3px;
 }
-ul.round-btns li{
-    cursor:pointer;
+ul.round-btns li {
+    cursor: pointer;
 }
-ul.round-btns.read-only li{
-    cursor:default;
+ul.round-btns.read-only li {
+    cursor: default;
 }
-ul.round-btns li:last-child{
-    margin-right:0px;
+ul.round-btns li:last-child {
+    margin-right: 0px;
 }
-ul.round-btns li.active{
-  background-color: rgba(250,250,250,0.3);
+ul.round-btns li.active {
+    background-color: rgba(250, 250, 250, 0.3);
 }
-ul.round-btns:not(.read-only) li:hover{
-  background-color: rgba(250,250,250,0.6);
+ul.round-btns:not(.read-only) li:hover {
+    background-color: rgba(250, 250, 250, 0.6);
 }
 
-/* visual */ 
-.visual ul.img-wrap li{
-    background:no-repeat 0 center;
-} 
+/* visual */
+.visual ul.img-wrap li {
+    background: no-repeat 0 center;
+}
 
 /* next, prev btn */
 
 .visual button.prev-btn,
-.visual button.next-btn{
-    width: 30px; height: 41px;
-    background:url('../images/arrow_left.png')no-repeat center center;
-    position:absolute; top:calc( 50% - 20.5px);
+.visual button.next-btn {
+    width: 30px;
+    height: 41px;
+    background: url('../img/arrow_left.png') no-repeat center center;
+    position: absolute;
+    top: calc(50% - 20.5px);
 }
-.visual button.next-btn{
-  background:url('../images/arrow_right.png')no-repeat center center;
-  right:0px;
-} 
-.visual.hover-slide button{
-    background-color: rgba(0,0,0,0.3);
+.visual button.next-btn {
+    background: url('../img/arrow_right.png') no-repeat center center;
+    right: 0px;
 }
-.visual.hover-slide button.prev-btn{
-    left:-30px;
-    transition:  all .5s;
-} 
-.visual.hover-slide button.next-btn{
-    right:-30px;
-    transition:  all .5s;
-}   
-.visual.hover-slide:hover button.prev-btn{ 
-    left:0px;
+.visual.hover-slide button {
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.visual.hover-slide:hover button.next-btn{
-    right:0px;
-} 
-
+.visual.hover-slide button.prev-btn {
+    left: -30px;
+    transition: all 0.5s;
+}
+.visual.hover-slide button.next-btn {
+    right: -30px;
+    transition: all 0.5s;
+}
+.visual.hover-slide:hover button.prev-btn {
+    left: 0px;
+}
+.visual.hover-slide:hover button.next-btn {
+    right: 0px;
+}
 
 /* effect-fade-out */
-.visual.effect-fade-out .img-wrap{
-    position:relative
+.visual.effect-fade-out .img-wrap {
+    position: relative;
 }
-.visual.effect-fade-out .img-wrap li{
+.visual.effect-fade-out .img-wrap li {
     position: absolute;
-    left:0px;
-    top:0px; 
-} 
- 
-.visual.effect-fade-out .img-wrap li{
-    opacity:0;
+    left: 0px;
+    top: 0px;
 }
-.visual.effect-fade-out .img-wrap li.fade-out{
-    opacity:0 !important;
-    transition:  all .3s;
+
+.visual.effect-fade-out .img-wrap li {
+    opacity: 0;
 }
-.visual.effect-fade-out .img-wrap li.fade-in{
-    opacity:1;
-    transition:  all .3s;
+.visual.effect-fade-out .img-wrap li.fade-out {
+    opacity: 0 !important;
+    transition: all 0.3s;
+}
+.visual.effect-fade-out .img-wrap li.fade-in {
+    opacity: 1;
+    transition: all 0.3s;
 }
 .round-btns-wrap,
 .visual.effect-fade-out .prev-btn,
-.visual.effect-fade-out .next-btn{
-    z-index:10;
+.visual.effect-fade-out .next-btn {
+    z-index: 10;
 }
-.visual.effect-fade-out .img-wrap li.up-stage{
-    z-index:5;
-    opacity:1;
+.visual.effect-fade-out .img-wrap li.up-stage {
+    z-index: 5;
+    opacity: 1;
 }
-.visual.effect-fade-out .img-wrap li.stage{
-    opacity:1 ;
-}
-
- 
-
-.test{
-    background: url(../images/0.png);
-    background: url(../images/1.png);
-    background: url(../images/2.png);
-    background: url(../images/3.png);
-    background: url(../images/4.png);
-    background: url(../images/5.png);
-    background: url(../images/6.png);
-    background: url(../images/7.png);
-    background: url(../images/8.png);
-    background: url(../images/9.png);
-    background: url(../images/10.png);
-    display:none;
+.visual.effect-fade-out .img-wrap li.stage {
+    opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
- 
+.test {
+    background: url(../img/0.png);
+    background: url(../img/1.png);
+    background: url(../img/2.png);
+    background: url(../img/3.png);
+    background: url(../img/4.png);
+    background: url(../img/5.png);
+    background: url(../img/6.png);
+    background: url(../img/7.png);
+    background: url(../img/8.png);
+    background: url(../img/9.png);
+    background: url(../img/10.png);
+    display: none;
+}
