@@ -241,7 +241,7 @@ const Slider = function( el , options ){
         process.styleSet(); 
         !option.auto && clearInterval(timer);         
     } 
-    console.log('aa')
+    console.log('aa test');
    
     init();
     window.onbeforeunload = function(e){
@@ -250,9 +250,10 @@ const Slider = function( el , options ){
 }
 
 
-
+console.log('test');
 
 const el = document.querySelector(`#slider`);
+console.log(el);
 const slider = new Slider(el, {
    auto:false,
      src:[
@@ -262,6 +263,7 @@ const slider = new Slider(el, {
         ,"./img/6.png" 
      ],
 });
+console.log(slider);
 
 const el2 = document.querySelector(`#slider_second`);
 const slider2 = new Slider(el2, {
@@ -276,4 +278,5 @@ const slider2 = new Slider(el2, {
        "./img/4.png","./img/5.png"
   ],
      width: 800, 
+     
 });
